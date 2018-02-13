@@ -52,7 +52,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         } else {
             print("Saved path is " + savedBashPath!)
             currentProcess = Process()
-//            currentProcess?.launchPath = "/Users/scottsword/releng-scripts/tsync"
             currentProcess?.launchPath = savedBashPath
             currentProcess?.arguments = ["dev"]
             let outputPipe = Pipe()
